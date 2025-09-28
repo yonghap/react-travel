@@ -1,16 +1,13 @@
 @import "tailwindcss";
 @font-face {
-    font-family: 'Pretendard';
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-    src: url('https://cdn.jsdelivr.net/gh/fonts-archive/Pretendard/Pretendard-Regular.woff2') format('woff2'),
-         url('https://cdn.jsdelivr.net/gh/fonts-archive/Pretendard/Pretendard-Regular.woff') format('woff'),
-         url('https://cdn.jsdelivr.net/gh/fonts-archive/Pretendard/Pretendard-Regular.otf') format('opentype');
+	font-family: 'Fjalla One';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Fjalla One'), url('https://fonts.cdnfonts.com/s/13340/FjallaOne-Regular.woff') format('woff');
 }
 @layer components {
-	.font-pretendard {
-		font-family: 'Pretendard', sans-serif;
+	.font-fo {
+		font-family: 'Fjalla One', sans-serif;
 	}
 	.badge {
 		@apply px-1 mr-1 rounded text-[11px];

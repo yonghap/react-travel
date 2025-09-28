@@ -12,15 +12,19 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           name="viewport"
           content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"
         />
-        <title>ggYu</title>
+        <title>WANDER VIEW</title>
         <meta name="description" content="App Router 구조에서 메타데이터 설정 예제" />
       </head>
-      <body className="bg-gray-100 p-5 sm:p-10">
-        <Header></Header>
-        <div className="overflow-hidden max-w-[600px] m-auto bg-white font-pretendard rounded-2xl shadow-lg">
-          <QueryProvider>
-            {children}
-          </QueryProvider>
+      <body className="bg-gray-100 font-fo">
+        <div className="flex">
+          <div className="w-[220px] shrink-0">
+            <Header></Header>
+          </div>
+          <div className="shadow-xl flex-1 min-h-screen">
+            <QueryProvider>
+              {children}
+            </QueryProvider>
+          </div>
         </div>
       </body>
     </html>
