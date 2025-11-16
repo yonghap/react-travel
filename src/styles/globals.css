@@ -1,27 +1,29 @@
 @import "tailwindcss";
 @font-face {
-	font-family: 'Fjalla One';
-	font-style: normal;
-	font-weight: 400;
-	src: local('Fjalla One'), url('https://fonts.cdnfonts.com/s/13340/FjallaOne-Regular.woff') format('woff');
+  font-family: "Arial Unicode MS";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Arial Unicode MS"), url("/fonts/arial.woff2") format("woff2");
 }
 @layer components {
-	.font-fo {
-		font-family: 'Fjalla One', sans-serif;
-	}
-	.badge {
-		@apply px-1 mr-1 rounded text-[11px];
-	}
-	.badge--PC {
-		@apply bg-blue-500;
-	}
-	.badge--PS {
-		@apply bg-blue-800;
-	}
-	.badge--Xbox {
-		@apply bg-lime-600;
-	}
-	.badge--NS {
-		@apply bg-red-600;
-	}
+  .font {
+    /* font-family: 'Fjalla One', sans-serif; */
+    font-family: "Arial Unicode MS";
+    letter-spacing: -0.5px;
+  }
+  .badge {
+    @apply px-1 mr-1 rounded text-[11px];
+  }
+  .badge--PC {
+    @apply bg-blue-500;
+  }
+  .badge--PS {
+    @apply bg-blue-800;
+  }
+  .badge--Xbox {
+    @apply bg-lime-600;
+  }
+  .badge--NS {
+    @apply bg-red-600;
+  }
 }

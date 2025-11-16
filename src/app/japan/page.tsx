@@ -7,7 +7,7 @@ export default function Japan() {
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet facere distinctio fugit expedita excepturi maiores molestias incidunt placeat quidem vero.
         </p>
         <ul className="flex flex-wrap">
-          <li className="w-1/2 p-2 relative">
+          <li className="w-1/3 p-2 relative">
             <img src="https://lh3.googleusercontent.com/d/1sYXVuCPibbbWsAE64FUNmKmkmoic_kl0"></img>
             <div className="absolute bottom-10 left-10 text-white">
               <h3>
@@ -15,7 +15,7 @@ export default function Japan() {
               </h3>
             </div>
           </li>
-          <li className="w-1/2 p-2 relative">
+          <li className="w-1/3 p-2 relative">
             <img src="https://lh3.googleusercontent.com/d/1Wnf1soWgAdLNgFJIsD6uj7hc9wiE70oP"></img>        
             <div className="absolute bottom-10 left-10 text-white">
               <h3>
@@ -23,7 +23,7 @@ export default function Japan() {
               </h3>
             </div>
           </li>
-           <li className="w-1/2 p-2 relative">
+           <li className="w-1/3 p-2 relative">
             <img src="https://lh3.googleusercontent.com/d/1iSXONdPV2vizvrHA5fbwIopUs2gQGYJV"></img>
             <div className="absolute bottom-10 left-10 text-white">
               <h3>
@@ -31,7 +31,7 @@ export default function Japan() {
               </h3>
             </div>
           </li>
-          <li className="w-1/2 p-2 relative">
+          <li className="w-1/3 p-2 relative">
             <img src="https://lh3.googleusercontent.com/d/1-4Sd4JGexyD8Xeqo97L-dajDTH15FGBi"></img>
             <div className="absolute bottom-10 left-10 text-white">
               <h3>
@@ -39,7 +39,7 @@ export default function Japan() {
               </h3>
             </div>
           </li>
-          <li className="w-1/2 p-2 relative">
+          <li className="w-1/3 p-2 relative">
             <img src="https://lh3.googleusercontent.com/d/1NdZa9aD_CneJDkt5z9v91cesGXnPZWGu"></img>
             <div className="absolute bottom-10 left-10 text-white">
               <h3>
@@ -47,7 +47,7 @@ export default function Japan() {
               </h3>
             </div>
           </li>
-         <li className="w-1/2 p-2 relative">
+         <li className="w-1/3 p-2 relative">
             <img src="https://lh3.googleusercontent.com/d/1BAIJV-whQwAROjCJl4Vy4UYzmkFFqlnz"></img>
             <div className="absolute bottom-10 left-10 text-white">
               <h3>
