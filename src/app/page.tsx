@@ -43,7 +43,7 @@ export default function Home() {
               className="block p-2 pb-3 w-full text-center bg-[#f0efe6]"
             >
               <div className="font-bold text-2xl">싱가포르</div>
-              <div className="text-gray-500 text-xs mb-1">2019</div>
+              <div className="text-gray-500 text-xs mb-1">2018</div>
               <span className="bg-black text-white text-xs py-1 px-2">
                 VIEW
               </span>
