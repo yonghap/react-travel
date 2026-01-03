@@ -1,10 +1,11 @@
-import "@/styles/globals.css";
-import { ReactNode } from "react";
-import QueryProvider from "@/components/QueryProvider"; // 클라이언트 컴포넌트
 import Header from "@/components/Header";
-import { Suspense } from "react";
+import "@/styles/globals.css";
 
-export default function RootLayout({ children }: { children: ReactNode }) {
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   return (
     <html lang="ko">
       <head>
@@ -19,9 +20,11 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         />
       </head>
       <body className="bg-gray-100 font">
-        <Header></Header>
-        <div className="shadow-xl flex-1 min-h-screen">
-          <QueryProvider>{children}</QueryProvider>
+        <div id="wrap" className="min-h-screen w-full">
+          <div id="container" className="pl-100">
+            <Header />
+            {children}
+          </div>
         </div>
       </body>
     </html>

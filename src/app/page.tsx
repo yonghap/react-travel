@@ -1,7 +1,7 @@
 export default function Home() {
   return (
-    <div className="relative w-full px-4 max-w-[1800px] mx-auto">
-      <ul className="grid grid-cols-5 gap-3 items-stretch ">
+    <div className="relative w-full p-6 max-w-[1800px] mx-auto">
+      <ul className="grid grid-cols-4 gap-3 items-stretch ">
         {/* 2023 대한민국 */}
         <li className="flex-1 min-w-0">
           <div>
