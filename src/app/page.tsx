@@ -1,6 +1,85 @@
 export default function Home() {
   return (
-    <div className="relative w-full p-6 max-w-[1800px] mx-auto">
+    <div className="relative w-full ">
+      {/* Main Story */}
+      <div
+        className="h-[750px] flex items-center"
+        style={{
+          backgroundImage: "url('/images/5.jpg')",
+          backgroundSize: "cover",
+        }}
+      >
+        <div className="card bg-white max-w-[370px] m-auto p-3 text-center rounded">
+          <figure className="rounded-2xl overflow-hidden">
+            <img src="/images/2.jpg" alt="Cover Image" />
+          </figure>
+          <div className="py-10">
+            <h3 className="text-gray-500">October 10, 2025</h3>
+            <p className="mt-1 text-2xl font-bold">도쿄 (Tokyo, 日本 도쿄도)</p>
+          </div>
+        </div>
+      </div>
+      {/* Latest Stories */}
+      <div className="py-20 px-3 bg-[#F9F1E2]">
+        <h2 className="text-3xl font-bold text-center">
+          Latest travel stories
+        </h2>
+        <ul className="mt-10 grid grid-cols-2 gap-3 max-w-[752px] mx-auto">
+          <li>
+            <div className="card bg-white max-w-[370px]  p-3 text-center rounded">
+              <figure className="rounded-2xl overflow-hidden">
+                <img src="/images/1.jpg" alt="Cover Image" />
+              </figure>
+              <div className="py-8">
+                <h3 className="text-gray-500">October 10, 2025</h3>
+                <p className="mt-1 text-xl font-bold">
+                  도쿄 (Tokyo, 日本 도쿄도)
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div className="card bg-white max-w-[370px]  p-3 text-center rounded">
+              <figure className="rounded-2xl overflow-hidden">
+                <img src="/images/2.jpg" alt="Cover Image" />
+              </figure>
+              <div className="py-8">
+                <h3 className="text-gray-500">October 10, 2025</h3>
+                <p className="mt-1 text-xl font-bold">
+                  도쿄 (Tokyo, 日本 도쿄도)
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div className="card bg-white max-w-[370px]  p-3 text-center rounded">
+              <figure className="rounded-2xl overflow-hidden">
+                <img src="/images/3.jpg" alt="Cover Image" />
+              </figure>
+              <div className="py-8">
+                <h3 className="text-gray-500">October 10, 2025</h3>
+                <p className="mt-1 text-xl font-bold">
+                  도쿄 (Tokyo, 日本 도쿄도)
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div className="card bg-white max-w-[370px]  p-3 text-center rounded">
+              <figure className="rounded-2xl overflow-hidden">
+                <img src="/images/4.jpg" alt="Cover Image" />
+              </figure>
+              <div className="py-8">
+                <h3 className="text-gray-500">October 10, 2025</h3>
+                <p className="mt-1 text-xl font-bold">
+                  도쿄 (Tokyo, 日本 도쿄도)
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
       <ul className="grid grid-cols-4 gap-3 items-stretch ">
         {/* 2023 대한민국 */}
         <li className="flex-1 min-w-0">
