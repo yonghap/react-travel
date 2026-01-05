@@ -21,7 +21,7 @@ export default function RootLayout({
       </head>
       <body className="bg-gray-100 font">
         <div id="wrap" className="min-h-screen w-full">
-          <div id="container" className="pl-100">
+          <div id="container" className="pr-100">
             <Header />
             {children}
           </div>

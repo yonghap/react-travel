@@ -1,23 +1,11 @@
+import Map from "@/components/Map";
+
 export default function Home() {
   return (
     <div className="relative w-full ">
       {/* Main Story */}
-      <div
-        className="h-[750px] flex items-center"
-        style={{
-          backgroundImage: "url('/images/5.jpg')",
-          backgroundSize: "cover",
-        }}
-      >
-        <div className="card bg-white max-w-[370px] m-auto p-3 text-center rounded">
-          <figure className="rounded-2xl overflow-hidden">
-            <img src="/images/2.jpg" alt="Cover Image" />
-          </figure>
-          <div className="py-10">
-            <h3 className="text-gray-500">October 10, 2025</h3>
-            <p className="mt-1 text-2xl font-bold">도쿄 (Tokyo, 日本 도쿄도)</p>
-          </div>
-        </div>
+      <div className="h-[750px] flex items-center">
+        <Map />
       </div>
       {/* Latest Stories */}
       <div className="py-20 px-3 bg-[#F9F1E2]">

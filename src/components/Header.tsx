@@ -10,13 +10,13 @@ export default function Header() {
   return (
     <header
       id="header"
-      className="fixed top-0 left-0 w-100 bottom-0 py-20 justify-center bg-[#C6DCFF]"
+      className="fixed top-0 right-0 w-100 bottom-0 py-20 justify-center bg-[#C6DCFF]"
     >
       <h1
         id="logo"
         className={`leading-[0.9] text-[80px] font-bold text-center text-[#0053D4] ${gasoek.className}`}
       >
-        The Travel Note
+        My Travel Note
       </h1>
       <figure>
         <img src={ImgTrain.src} className="mt-8 mx-auto" alt="Train" />
