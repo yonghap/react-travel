@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-const GOOGLE_MAPS_KEY = process.env.REACT_APP_GOOGLE_MAPS_KEY;
+const GOOGLE_MAPS_KEY = process.env.NEXT_PUBLIC_GOOGLE_MAPS_KEY;
 
 export default function Map() {
   const mapRef = useRef(null);
