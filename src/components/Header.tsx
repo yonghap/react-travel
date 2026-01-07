@@ -10,7 +10,7 @@ export default function Header() {
   return (
     <header
       id="header"
-      className="fixed top-0 right-0 w-100 bottom-0 py-20 justify-center bg-[#C6DCFF]"
+      className="fixed top-0 right-0 w-100 bottom-0 py-20 justify-center bg-[#C6DCFF] flex flex-col z-10 items-center "
     >
       <h1
         id="logo"
