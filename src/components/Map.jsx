@@ -29,21 +29,31 @@ export default function Map() {
       disableDefaultUI: true,
     });
 
-    const marker = new window.google.maps.Marker({
-      position: center,
-      map,
-      title: "노을 본 자리",
-      icon: {
-        url: "/images/marker.svg",
-        scaledSize: new window.google.maps.Size(40, 40),
-        anchor: new window.google.maps.Point(20, 40),
-      },
-    });
+    // 여러 마커 좌표 배열
+    const locations = [
+      { lat: 35.0116, lng: 135.76, title: "노을 본 자리" },
+      { lat: 35.015, lng: 135.75, title: "맛집" },
+      { lat: 35.009, lng: 135.73, title: "카페" },
+    ];
 
-    marker.addListener("click", () => {
-      console.log("마커 클릭");
-      map.panTo(center);
-      map.setZoom(16);
+    // 반복문으로 마커 생성
+    locations.forEach((loc) => {
+      const marker = new window.google.maps.Marker({
+        position: { lat: loc.lat, lng: loc.lng },
+        map,
+        title: loc.title,
+        icon: {
+          url: "/images/marker.svg",
+          scaledSize: new window.google.maps.Size(40, 40),
+          anchor: new window.google.maps.Point(20, 40),
+        },
+      });
+
+      marker.addListener("click", () => {
+        console.log(`${loc.title} 마커 클릭`);
+        map.panTo({ lat: loc.lat, lng: loc.lng });
+        map.setZoom(16);
+      });
     });
   };
 
