@@ -30,10 +30,15 @@ export default function Header() {
       </p>
       <ul className="mt-4">
         <li>
-          <Input placeholder="ID" />
+          <Input inputSize="small" placeholder="ID" />
         </li>
         <li className="mt-2">
-          <Input type="password" placeholder="Password" />
+          <Input inputSize="small" type="password" placeholder="Password" />
+        </li>
+        <li className="mt-2">
+          <Button variant="primary" size="full">
+            Login
+          </Button>
         </li>
       </ul>
     </header>

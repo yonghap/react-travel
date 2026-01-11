@@ -7,7 +7,7 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default: "bg-gray-100 text-black",
-        primary: "bg-blue-500 text-white",
+        primary: "bg-blue-500 text-white font-bold",
         secondary: "bg-gray-200 text-black",
         icon: "bg-white border border-gray-300",
         disabled: "bg-gray-200 text-gray-400 cursor-not-allowed",
