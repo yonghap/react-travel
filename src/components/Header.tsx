@@ -17,7 +17,7 @@ export default function Header() {
     >
       <h1
         id="logo"
-        className={`leading-[0.9] text-[80px] font-bold text-center text-[#0053D4] ${gasoek.className}`}
+        className={`leading-[0.9] text-[80px] font-bold text-center text-blue-600 ${gasoek.className}`}
       >
         My Travel Note
       </h1>
