@@ -20,7 +20,7 @@ export default function Ticket({
   transport,
 }: TicketProps) {
   return (
-    <div className="relative w-full rounded-2xl bg-white shadow-sm border border-slate-200 p-5">
+    <div className="relative w-full rounded-2xl bg-white shadow-sm border border-slate-200 py-4 px-6">
       <span className="absolute -left-3 top-1/2 h-6 w-6 -translate-y-1/2 rounded-full bg-slate-100"></span>
       <span className="absolute -right-3 top-1/2 h-6 w-6 -translate-y-1/2 rounded-full bg-slate-100"></span>
 

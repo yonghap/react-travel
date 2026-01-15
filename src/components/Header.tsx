@@ -18,6 +18,7 @@ export default function Header() {
       className="fixed top-0 right-0 w-180 bottom-0 py-20 px-6 bg-gray-100 flex flex-col z-10 items-center overflow-y-auto shadow-lg"
     >
       <div className="w-full">
+        <h3 className="mb-4 text-3xl">Trips</h3>
         <Ticket
           city="Tokyo"
           code="JP"
