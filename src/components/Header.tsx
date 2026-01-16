@@ -29,6 +29,16 @@ export default function Header() {
           depNation="JP"
           transport="plane"
         />
+        <Ticket
+          city="Tokyo"
+          code="JP"
+          startDate="2025.05.01"
+          endDate="2025.05.07"
+          fewDate={7}
+          startNation="KR"
+          depNation="JP"
+          transport="plane"
+        />
       </div>
       <h1
         id="logo"
