@@ -1,14 +1,14 @@
 @import "tailwindcss";
-@font-face {
-  font-family: "Arial Unicode MS";
-  font-style: normal;
-  font-weight: 400;
-  src: local("Arial Unicode MS"), url("/fonts/arial.woff2") format("woff2");
-}
 @layer components {
   body {
-    font-family: "Arial Unicode MS";
+    font-family: var(--font-arial-unicode);
     letter-spacing: -0.2px;
+  }
+  .font-arial {
+    font-family: var(--font-arial-unicode);
+  }
+  .font-poppins {
+    font-family: var(--font-poppins);
   }
   .badge {
     @apply px-1 mr-1 rounded text-[11px];

@@ -20,7 +20,7 @@ export default function Header() {
       <div className="w-full">
         <h3 className="mb-4 text-3xl">Trips</h3>
         <Ticket
-          city="Tokyo"
+          city="TOKYO"
           code="JP"
           startDate="2025.05.01"
           endDate="2025.05.07"
@@ -30,7 +30,7 @@ export default function Header() {
           transport="plane"
         />
         <Ticket
-          city="Tokyo"
+          city="PARIS"
           code="JP"
           startDate="2025.05.01"
           endDate="2025.05.07"

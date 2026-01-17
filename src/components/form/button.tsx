@@ -2,7 +2,7 @@ import { cva, type VariantProps } from "class-variance-authority";
 
 // 버튼 스타일 정의
 const buttonVariants = cva(
-  "button inline-flex items-center justify-center whitespace-nowrap  transition-all cursor-pointer rounded",
+  "button inline-flex items-center justify-center whitespace-nowrap  transition-all cursor-pointer rounded w-full",
   {
     variants: {
       variant: {
@@ -13,9 +13,9 @@ const buttonVariants = cva(
         disabled: "bg-gray-200 text-gray-400 cursor-not-allowed",
       },
       size: {
-        default: "px-5 py-1.5 text-base",
-        small: "px-3 py-1 text-xs",
-        large: "px-7 py-2 text-xl",
+        default: "px-5 h-10 text-base",
+        small: "px-3 h-9 text-xs",
+        large: "px-7 h-12 text-xl",
         full: "w-full px-5 py-1.5",
         iconSmall: "w-8 h-8  [&_img]:w-4.5 [&_img]:h-4.5",
         iconDefault: "w-10 h-10  [&_img]:w-7 [&_img]:h-7",
@@ -26,7 +26,7 @@ const buttonVariants = cva(
       variant: "default",
       size: "default",
     },
-  }
+  },
 );
 
 // VariantProps로 타입 추출

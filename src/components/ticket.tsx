@@ -25,9 +25,7 @@ export default function Ticket({
       <span className="absolute -right-3 top-1/2 h-6 w-6 -translate-y-1/2 rounded-full bg-slate-100"></span>
 
       <div className="flex items-center justify-between">
-        <h3 className="font-['Space_Grotesk'] text-lg font-semibold text-slate-900">
-          🇯🇵 {city} Trip
-        </h3>
+        <h3 className="text-lg font-semibold text-slate-900">🇯🇵 {city}</h3>
         <span className="text-slate-400">✈️</span>
       </div>
 

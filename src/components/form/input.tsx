@@ -2,7 +2,7 @@ import { cva, type VariantProps } from "class-variance-authority";
 
 // 버튼 스타일 정의
 const inputVariants = cva(
-  "border border-gray-300 rounded  outline-none disabled:bg-gray-200 disabled:text-gray-900",
+  "border border-gray-300 rounded  outline-none disabled:bg-gray-200 disabled:text-gray-900 w-full",
   {
     variants: {
       variant: {
@@ -12,7 +12,7 @@ const inputVariants = cva(
       },
       inputSize: {
         default: "h-10 text-sm px-2 py-1",
-        small: "h-8 text-xs px-2 py-1",
+        small: "h-9 text-xs px-2 py-1",
         large: "h-12 text-xl px-3 py-1",
       },
     },
@@ -20,7 +20,7 @@ const inputVariants = cva(
       variant: "default",
       inputSize: "default",
     },
-  }
+  },
 );
 
 // VariantProps로 타입 추출
