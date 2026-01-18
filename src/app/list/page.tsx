@@ -19,22 +19,25 @@ export default function Home() {
         className="fixed top-0 right-0 w-170 bottom-0 py-10 px-7 bg-gray-100 z-10 overflow-y-auto shadow-lg "
       >
         <h3 className="mb-5 text-3xl text-left font-bold">Trips</h3>
-        <ul>
-          {tickets.map((ticket) => (
-            <li className="mb-2">
-              <Ticket
-                city={ticket.city}
-                code={ticket.code}
-                startDate={ticket.startDate}
-                endDate={ticket.endDate}
-                fewDate={ticket.fewDate}
-                startNation={ticket.startNation}
-                depNation={ticket.depNation}
-                transport={ticket.transport}
-              />
-            </li>
-          ))}
-        </ul>
+        <article>
+          <h4 className="text-gray-500 mb-2">- 2025</h4>
+          <ul>
+            {tickets.map((ticket) => (
+              <li className="mb-2">
+                <Ticket
+                  city={ticket.city}
+                  code={ticket.code}
+                  startDate={ticket.startDate}
+                  endDate={ticket.endDate}
+                  fewDate={ticket.fewDate}
+                  startNation={ticket.startNation}
+                  depNation={ticket.depNation}
+                  transport={ticket.transport}
+                />
+              </li>
+            ))}
+          </ul>
+        </article>
       </div>
       <div className="w-full h-screen">
         <Map />
