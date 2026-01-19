@@ -2,7 +2,7 @@ type TicketProps = {
   city: string;
   code: string; // 국가 코드 (JP 등)
   startDate: string; // YYYY-MM-DD
-  endDate: string; // YYYY-MM-DD
+  endDate: string | null; // YYYY-MM-DD
   fewDate: number; // 여행 일수
   startNation: string; // 출발 국가
   depNation: string; // 도착 국가
@@ -20,7 +20,7 @@ export default function Ticket({
   transport,
 }: TicketProps) {
   return (
-    <div className="relative w-full rounded-2xl bg-white shadow-sm border border-slate-200 py-4 px-6">
+    <div className="relative w-full rounded-2xl bg-white shadow-sm border border-slate-200 py-4 px-6 cursor-pointer">
       <span className="absolute -left-3 top-1/2 h-6 w-6 -translate-y-1/2 rounded-full bg-slate-100"></span>
       <span className="absolute -right-3 top-1/2 h-6 w-6 -translate-y-1/2 rounded-full bg-slate-100"></span>
 
@@ -32,14 +32,21 @@ export default function Ticket({
         <span className="text-slate-400">✈️</span>
       </div>
 
-      <p className="mt-1 text-sm text-slate-500 font-['Inter']">
-        {startDate} – {endDate} ·{" "}
-        <span className="text-gray-900">{fewDate}</span> days
+      <p className="mt-1 text-sm text-slate-500">
+        {endDate ? (
+          <>
+            {" "}
+            {startDate} - {endDate} ·{" "}
+            <span className="text-gray-900">{fewDate}</span> days{" "}
+          </>
+        ) : (
+          <> {startDate} · Day Trip </>
+        )}
       </p>
 
       <div className="my-4 border-t border-dashed border-slate-300"></div>
 
-      <div className="flex justify-between text-xs text-slate-500 font-['Inter']">
+      <div className="flex justify-between text-xs text-slate-500 ">
         <div>
           <p className="uppercase tracking-wider text-slate-400">From</p>
           <p className="text-slate-700">{startNation}</p>

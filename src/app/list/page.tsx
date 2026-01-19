@@ -10,34 +10,62 @@ import { tickets } from "@/data/mockData";
 const poppins = Poppins({ subsets: ["latin"], weight: "400" });
 const inter = Inter({ subsets: ["latin"], weight: "400" });
 
+const groupAndSortByYear = (trips: typeof tickets) => {
+  const grouped = trips.reduce(
+    (acc, trip) => {
+      const year = trip.startDate.split(".")[0];
+      if (!acc[year]) acc[year] = [];
+      acc[year].push(trip);
+      return acc;
+    },
+    {} as Record<string, typeof tickets>,
+  );
+
+  // 각 년도별 데이터를 날짜순 정렬
+  Object.keys(grouped).forEach((year) => {
+    grouped[year].sort((a, b) => a.startDate.localeCompare(b.startDate));
+  });
+
+  return grouped;
+};
+
 export default function Home() {
+  const groupedTickets = groupAndSortByYear(tickets);
+
   return (
     <div className="relative pr-170">
       {/* header */}
       <div
         id="header"
-        className="fixed top-0 right-0 w-170 bottom-0 py-10 px-7 bg-gray-100 z-10 overflow-y-auto shadow-lg "
+        className="fixed top-0 right-0 w-170 bottom-0 py-12 px-7 bg-gray-100 z-10 overflow-y-auto shadow-lg "
       >
-        <h3 className="mb-5 text-3xl text-left font-bold">Trips</h3>
-        <article>
-          <h4 className="text-gray-500 mb-2">- 2025</h4>
-          <ul>
-            {tickets.map((ticket) => (
-              <li className="mb-2">
-                <Ticket
-                  city={ticket.city}
-                  code={ticket.code}
-                  startDate={ticket.startDate}
-                  endDate={ticket.endDate}
-                  fewDate={ticket.fewDate}
-                  startNation={ticket.startNation}
-                  depNation={ticket.depNation}
-                  transport={ticket.transport}
-                />
-              </li>
-            ))}
-          </ul>
-        </article>
+        <h3 className="mb-8 text-4xl text-left font-bold">My Journey</h3>
+        {Object.entries(groupedTickets)
+          .sort(([yearA], [yearB]) => yearB.localeCompare(yearA)) // 최신년도 먼저
+          .map(([year, tickets]) => (
+            <article key={year} className="mb-6 px-2">
+              <h2 className="text-gray-500 mb-2 relative -left-9">
+                <i className="w-9 h-px bg-gray-400 inline-block align-middle" />{" "}
+                {year}
+              </h2>
+              <ul>
+                {tickets.map((ticket, index) => (
+                  <li key={index} className="mb-2">
+                    <Ticket
+                      city={ticket.city}
+                      code={ticket.code}
+                      startDate={ticket.startDate}
+                      endDate={ticket.endDate}
+                      fewDate={ticket.fewDate}
+                      startNation={ticket.startNation}
+                      depNation={ticket.depNation}
+                      transport={ticket.transport}
+                    />
+                  </li>
+                ))}
+              </ul>
+            </article>
+          ))}
       </div>
       <div className="w-full h-screen">
         <Map />

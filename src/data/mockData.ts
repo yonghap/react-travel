@@ -4,7 +4,7 @@ export interface Ticket {
   city: string;
   code: string;
   startDate: string;
-  endDate: string;
+  endDate: string | null;
   fewDate: number;
   startNation: string;
   depNation: string;
@@ -12,6 +12,16 @@ export interface Ticket {
 }
 
 export const tickets: Ticket[] = [
+  {
+    city: "Busan",
+    code: "KR",
+    startDate: "2025.05.01",
+    endDate: null,
+    fewDate: 1,
+    startNation: "KR",
+    depNation: "JP",
+    transport: "plane",
+  },
   {
     city: "Tokyo",
     code: "JP",
@@ -55,8 +65,8 @@ export const tickets: Ticket[] = [
   {
     city: "Bangkok",
     code: "TH",
-    startDate: "2025.09.10",
-    endDate: "2025.09.14",
+    startDate: "2024.09.10",
+    endDate: "2024.09.14",
     fewDate: 4,
     startNation: "KR",
     depNation: "TH",
@@ -65,8 +75,8 @@ export const tickets: Ticket[] = [
   {
     city: "London",
     code: "GB",
-    startDate: "2025.10.01",
-    endDate: "2025.10.09",
+    startDate: "2024.10.01",
+    endDate: "2024.10.09",
     fewDate: 8,
     startNation: "KR",
     depNation: "GB",
@@ -85,8 +95,8 @@ export const tickets: Ticket[] = [
   {
     city: "Berlin",
     code: "DE",
-    startDate: "2025.12.05",
-    endDate: "2025.12.12",
+    startDate: "2024.12.05",
+    endDate: "2024.12.12",
     fewDate: 7,
     startNation: "KR",
     depNation: "DE",
