@@ -39,7 +39,7 @@ export default function Home() {
         id="header"
         className="fixed top-0 right-0 w-170 bottom-0 py-12 px-7 bg-gray-100 z-10 overflow-y-auto shadow-lg "
       >
-        <h3 className="mb-8 text-4xl text-left font-bold">My Journey</h3>
+        <h3 className="mb-8 text-4xl font-bold text-center">My Journey</h3>
         {Object.entries(groupedTickets)
           .sort(([yearA], [yearB]) => yearB.localeCompare(yearA)) // 최신년도 먼저
           .map(([year, tickets]) => (
