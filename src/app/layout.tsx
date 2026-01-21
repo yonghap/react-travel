@@ -1,5 +1,6 @@
 import { Poppins } from "next/font/google";
 import localFont from "next/font/local";
+import Header from "@/components/Header";
 import "@/styles/globals.css";
 
 const poppins = Poppins({
@@ -34,6 +35,7 @@ export default function RootLayout({
       </head>
       <body className="bg-gray-100">
         <div id="wrap" className="min-h-screen w-full">
+          <Header />
           {children}
         </div>
       </body>
