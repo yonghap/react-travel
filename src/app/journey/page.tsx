@@ -41,7 +41,16 @@ export default function Home() {
       >
         <h3 className="mb-8 text-4xl font-bold text-center">Tokyo</h3>
         <ul>
-          <li>123</li>
+          <li>Tokyo Tower</li>
+          <li>Harajuku</li>
+          <li>Shinjuku</li>
+          <li>Disneyland</li>
+          <li>Akihabara</li>
+          <li>Asakusa</li>
+          <li>Ueno Park</li>
+          <li>Roppongi</li>
+          <li>Ginza</li>
+          <li>Tsukiji Market</li>
         </ul>
       </div>
       <div className="w-full h-screen">
