@@ -3,7 +3,7 @@ import Image from "next/image";
 import { Button } from "@/components/form/button";
 import { Input } from "@/components/form/input";
 import ImgTrain from "@/assets/images/img_train.svg";
-import Ticket from "@/components/ticket";
+import Ticket from "@/components/Ticket";
 
 import { Poppins, Inter } from "next/font/google";
 import { tickets } from "@/data/mockData";
