@@ -11,6 +11,15 @@ export interface Ticket {
   transport: "plane" | "train" | "bus" | "ship";
 }
 
+export interface Journey {
+  date: string;
+  type: "food" | "sightseeing" | "accommodation" | "transportation" | "other";
+  name: string;
+  meta: string;
+  description: string;
+  images: string[];
+}
+
 export const tickets: Ticket[] = [
   {
     city: "Busan",
@@ -121,5 +130,30 @@ export const tickets: Ticket[] = [
     startNation: "KR",
     depNation: "AE",
     transport: "plane",
+  },
+];
+export const journeys: Journey[] = [
+  {
+    date: "2025.05.01",
+    type: "🍜",
+    name: "Sushi Dai",
+    meta: "local food",
+    description: "Famous sushi restaurant in Tsukiji Market",
+    images: [
+      "https://picsum.photos/seed/picsum/200/300",
+      "https://picsum.photos/seed/picsum/200/300",
+      "https://picsum.photos/seed/picsum/200/300",
+    ],
+  },
+  {
+    date: "2025.05.01",
+    type: "📍",
+    name: "Tokyo Tower",
+    meta: "landmark",
+    description: "Iconic tower with panoramic city views",
+    images: [
+      "https://picsum.photos/seed/picsum/200/300",
+      "https://picsum.photos/seed/picsum/200/300",
+    ],
   },
 ];
