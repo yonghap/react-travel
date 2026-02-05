@@ -134,7 +134,7 @@ export const tickets: Ticket[] = [
 ];
 export const journeys: Journey[] = [
   {
-    date: "2025.05.02",
+    date: "2025.05.01",
     type: "🍜",
     name: "Sushi Dai",
     meta: "local food",
