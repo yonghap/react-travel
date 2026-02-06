@@ -142,7 +142,6 @@ export const journeys: Journey[] = [
     images: [
       "https://picsum.photos/seed/picsum/200/300",
       "https://picsum.photos/seed/picsum/200/300",
-      "https://picsum.photos/seed/picsum/200/300",
     ],
   },
   {
