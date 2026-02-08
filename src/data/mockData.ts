@@ -157,7 +157,18 @@ export const journeys: Journey[] = [
   },
   {
     date: "2025.05.01",
-    type: "📍",
+    type: "🛍️",
+    name: "Tokyo Tower",
+    meta: "landmark",
+    description: "Iconic tower with panoramic city views",
+    images: [
+      "https://picsum.photos/seed/picsum/200/300",
+      "https://picsum.photos/seed/picsum/200/300",
+    ],
+  },
+  {
+    date: "2025.05.01",
+    type: "🗺️",
     name: "Tokyo Tower",
     meta: "landmark",
     description: "Iconic tower with panoramic city views",

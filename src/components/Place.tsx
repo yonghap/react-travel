@@ -17,17 +17,26 @@ export default function Place({
 }: journeyProps) {
   return (
     <div className="rounded-lg border border-neutral-200 bg-white p-3 shadow-sm">
-      <div className="relative flex gap-3 cursor-pointer">
-        <div className="flex h-10 w-10 items-center justify-center rounded-md bg-neutral-100">
-          {type}
-        </div>
+      <div className="relative flex justify-between">
+        <div className="flex items-center gap-3">
+          <div className="flex h-10 w-10 items-center justify-center rounded-md bg-neutral-100">
+            {type}
+          </div>
 
-        <div className="flex flex-col">
-          <span className="text-sm font-semibold text-neutral-900">{name}</span>
-          <span className="text-xs text-neutral-500">{meta}</span>
+          <div className="flex flex-col">
+            <span className="text-sm font-semibold text-neutral-900">
+              {name}
+            </span>
+            <span className="text-xs text-neutral-500">{meta}</span>
+          </div>
+        </div>
+        <div className="flex items-center">
+          <button type="button" className="text-2xl cursor-pointer">
+            ▽
+          </button>
         </div>
       </div>
-      <div className="mt-3">
+      <div className="mt-3 hidden">
         <div className="grid grid-cols-4 gap-2">
           {images.map((image, index) => (
             <figure key={index} className="pt-[100%] relative">
