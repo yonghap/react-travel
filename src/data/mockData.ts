@@ -134,10 +134,10 @@ export const tickets: Ticket[] = [
 ];
 export const journeys: Journey[] = [
   {
-    date: "2025.05.01",
-    type: "🍜",
-    name: "Sushi Dai",
-    meta: "local food",
+    date: "2026.01.29",
+    type: "🗺️",
+    name: "오쿠오이코조역 전망대",
+    meta: "sightseeing",
     description: "Famous sushi restaurant in Tsukiji Market",
     images: [
       "https://picsum.photos/seed/picsum/200/300",
@@ -145,33 +145,89 @@ export const journeys: Journey[] = [
     ],
   },
   {
-    date: "2025.05.01",
-    type: "📍",
-    name: "Tokyo Tower",
-    meta: "landmark",
-    description: "Iconic tower with panoramic city views",
-    images: [
-      "https://picsum.photos/seed/picsum/200/300",
-      "https://picsum.photos/seed/picsum/200/300",
-    ],
-  },
-  {
-    date: "2025.05.01",
-    type: "🛍️",
-    name: "Tokyo Tower",
-    meta: "landmark",
-    description: "Iconic tower with panoramic city views",
-    images: [
-      "https://picsum.photos/seed/picsum/200/300",
-      "https://picsum.photos/seed/picsum/200/300",
-    ],
-  },
-  {
-    date: "2025.05.01",
+    date: "2026.01.29",
     type: "🗺️",
-    name: "Tokyo Tower",
-    meta: "landmark",
+    name: "꿈의 현수교",
+    meta: "sightseeing",
+    description: "Famous sushi restaurant in Tsukiji Market",
+    images: [
+      "https://picsum.photos/seed/picsum/200/300",
+      "https://picsum.photos/seed/picsum/200/300",
+    ],
+  },
+  {
+    date: "2026.01.29",
+    type: "🗺️",
+    name: "미호노 마츠바라",
+    meta: "sightseeing",
+    description: "Famous sushi restaurant in Tsukiji Market",
+    images: [
+      "https://picsum.photos/seed/picsum/200/300",
+      "https://picsum.photos/seed/picsum/200/300",
+    ],
+  },
+  {
+    date: "2026.01.29",
+    type: "🏨",
+    name: "후지 그린 호텔",
+    meta: "sightseeing",
+    description: "Famous sushi restaurant in Tsukiji Market",
+    images: [
+      "https://picsum.photos/seed/picsum/200/300",
+      "https://picsum.photos/seed/picsum/200/300",
+    ],
+  },
+  {
+    date: "2026.01.30",
+    // type: "📍",
+    type: "🗺️",
+    name: "꿈의 대교",
+    meta: "sightseeing",
     description: "Iconic tower with panoramic city views",
+    images: [
+      "https://picsum.photos/seed/picsum/200/300",
+      "https://picsum.photos/seed/picsum/200/300",
+    ],
+  },
+  {
+    date: "2026.01.30",
+    type: "🗺️",
+    name: "후지산 세계유산센터",
+    meta: "sightseeing",
+    description: "Famous sushi restaurant in Tsukiji Market",
+    images: [
+      "https://picsum.photos/seed/picsum/200/300",
+      "https://picsum.photos/seed/picsum/200/300",
+    ],
+  },
+  {
+    date: "2026.01.30",
+    type: "🗺️",
+    name: "시라이토 폭포",
+    meta: "sightseeing",
+    description: "Famous sushi restaurant in Tsukiji Market",
+    images: [
+      "https://picsum.photos/seed/picsum/200/300",
+      "https://picsum.photos/seed/picsum/200/300",
+    ],
+  },
+  {
+    date: "2026.01.30",
+    type: "🗺️",
+    name: "타누키 호수",
+    meta: "sightseeing",
+    description: "Famous sushi restaurant in Tsukiji Market",
+    images: [
+      "https://picsum.photos/seed/picsum/200/300",
+      "https://picsum.photos/seed/picsum/200/300",
+    ],
+  },
+  {
+    date: "2026.01.30",
+    type: "🗺️",
+    name: "오부치 사사바",
+    meta: "sightseeing",
+    description: "Famous sushi restaurant in Tsukiji Market",
     images: [
       "https://picsum.photos/seed/picsum/200/300",
       "https://picsum.photos/seed/picsum/200/300",

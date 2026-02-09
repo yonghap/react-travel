@@ -10,40 +10,49 @@ const inter = Inter({ subsets: ["latin"], weight: "400" });
 
 export default function Home() {
   return (
-    <div className="relative pr-170">
+    <div className="relative">
       {/* header */}
       <header
         id="header"
-        className="fixed top-0 right-0 w-170 bottom-0 py-10 px-7 bg-gray-100 flex flex-col z-10 items-center justify-center  overflow-y-auto shadow-lg "
+        className="fixed top-1/2 right-1/2 w-100  pt-15 pb-18 px-7 bg-white flex flex-col z-10 items-center justify-center  overflow-y-auto shadow-2xl translate-x-1/2 -translate-y-1/2 rounded-3xl"
       >
         <h1
           id="logo"
-          className={`leading-[0.9] text-[80px] font-bold text-center text-blue-600 ${poppins.className}`}
+          className={`leading-[0.9] text-[45px] font-bold text-center text-blue-600 ${poppins.className}`}
         >
           Start My <br />
           Journey
         </h1>
         <figure>
-          <img src={ImgTrain.src} className="mt-10 mx-auto" alt="Train" />
+          <img src={ImgTrain.src} className="mt-8 mx-auto w-20" alt="Train" />
         </figure>
-        <p className="text-[#0053D4] text-center mt-10">
+        <p className="text-[#0053D4] text-center mt-8">
           Wandering paths, fleeting skies,
           <br /> and stories told in photographs.
         </p>
-        <ul className="mt-6  w-2/5">
+        <ul className="mt-6  w-3/5">
           <li>
-            <Input placeholder="ID" />
+            <Input inputSize="small" placeholder="ID" />
           </li>
           <li className="mt-2">
-            <Input type="password" placeholder="Password" />
+            <Input type="password" inputSize="small" placeholder="Password" />
           </li>
           <li className="mt-3 text-center">
-            <Button variant="primary">Login</Button>
+            <Button variant="primary" size="small">
+              LOGIN
+            </Button>
           </li>
         </ul>
       </header>
-      <div className="w-full h-screen">
-        <Map />
+      <div className="w-full h-screen relative">
+        <div className="bg-[rgba(0,0,0,0.4)] absolute top-0 left-0 w-full h-full z-0"></div>
+        <video
+          src="/videos/intro.mp4"
+          className="w-full h-full object-cover"
+          autoPlay
+          muted
+          loop
+        ></video>
       </div>
     </div>
   );
