@@ -38,42 +38,44 @@ export default function Home() {
       {/* header */}
       <div
         id="header"
-        className="fixed top-0 right-0 w-150 bottom-0 py-12 px-7 bg-gray-100 z-10 overflow-y-auto shadow-lg "
+        className="fixed top-0 right-0 w-150 bottom-0 py-12 px-7 bg-gray-100 z-10 overflow-y-auto shadow-lg"
       >
-        <h3 className="mb-8 text-4xl font-bold text-center">Tokyo</h3>
-        <ul>
-          {dayGroups.map((day) => (
-            <li key={day.date} className={day.dayNumber > 1 ? "mt-6" : ""}>
-              <div className="space-y-2">
-                <div className="sticky top-0 z-10 pb-2">
-                  <div className="flex items-center justify-between pr-2">
-                    <span className="text-sm tracking-widest text-neutral-500">
-                      DAY {day.dayNumber}
-                    </span>
-                    <span className="text-sm font-medium text-gray-700">
-                      {day.date}
-                    </span>
-                  </div>
-                  <div className="mt-2 border-t border-dashed border-neutral-300"></div>
-                </div>
-
+        <div className="relative z-10">
+          <h3 className="mb-8 text-4xl font-bold text-center">SHIZUOKA</h3>
+          <ul>
+            {dayGroups.map((day) => (
+              <li key={day.date} className={day.dayNumber > 1 ? "mt-6" : ""}>
                 <div className="space-y-2">
-                  {day.items.map((journey, index) => (
-                    <Place
-                      key={index}
-                      date={journey.date}
-                      type={journey.type}
-                      name={journey.name}
-                      meta={journey.meta}
-                      description={journey.description}
-                      images={journey.images}
-                    />
-                  ))}
+                  <div className="pb-2">
+                    <div className="flex items-center justify-between pr-2">
+                      <span className="text-sm tracking-widest text-neutral-500">
+                        DAY {day.dayNumber}
+                      </span>
+                      <span className="text-sm font-medium text-gray-700">
+                        {day.date}
+                      </span>
+                    </div>
+                    <div className="mt-2 border-t border-dashed border-neutral-300"></div>
+                  </div>
+
+                  <div className="space-y-2">
+                    {day.items.map((journey, index) => (
+                      <Place
+                        key={index}
+                        date={journey.date}
+                        type={journey.type}
+                        name={journey.name}
+                        meta={journey.meta}
+                        description={journey.description}
+                        images={journey.images}
+                      />
+                    ))}
+                  </div>
                 </div>
-              </div>
-            </li>
-          ))}
-        </ul>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
       <div className="w-full h-screen">
         <Map />
