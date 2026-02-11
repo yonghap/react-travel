@@ -1,3 +1,7 @@
+"use client";
+
+import { useState } from "react";
+
 type journeyProps = {
   date: string;
   type: "food" | "sightseeing" | "accommodation" | "transportation" | "other";
@@ -15,6 +19,8 @@ export default function Place({
   description,
   images,
 }: journeyProps) {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <div className="rounded-lg border border-neutral-200 bg-white p-3 shadow-sm">
       <div className="relative flex justify-between">
@@ -31,12 +37,16 @@ export default function Place({
           </div>
         </div>
         <div className="flex items-center">
-          <button type="button" className="text-2xl cursor-pointer">
+          <button
+            type="button"
+            className="text-2xl cursor-pointer"
+            onClick={() => setIsOpen(!isOpen)}
+          >
             ▽
           </button>
         </div>
       </div>
-      <div className="mt-3 hidden">
+      <div className={`mt-3 ${isOpen ? "" : "hidden"}`}>
         <div className="grid grid-cols-4 gap-2">
           {images.map((image, index) => (
             <figure key={index} className="pt-[100%] relative">
