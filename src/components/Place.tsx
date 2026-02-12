@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import IcoDropDown from "@/assets/images/ico/ico_dropdown.svg";
 
 type journeyProps = {
   date: string;
@@ -39,10 +40,12 @@ export default function Place({
         <div className="flex items-center">
           <button
             type="button"
-            className="text-2xl cursor-pointer"
+            className="text-2xl cursor-pointer w-7 h-7 flex items-center justify-center text-gray-500 hover:text-gray-900 transition-all"
             onClick={() => setIsOpen(!isOpen)}
           >
-            ▽
+            <IcoDropDown
+              className={`w-5 h-5 transition-all ${isOpen ? "rotate-180" : ""}`}
+            />
           </button>
         </div>
       </div>
