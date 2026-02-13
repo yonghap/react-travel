@@ -23,7 +23,7 @@ export default function Place({
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="rounded-lg border border-neutral-200 bg-white p-3 shadow-sm">
+    <div className="rounded-lg border border-neutral-200 bg-white p-3 shadow-xs">
       <div className="relative flex justify-between">
         <div className="flex items-center gap-3">
           <div className="flex h-10 w-10 items-center justify-center rounded-md bg-neutral-100">

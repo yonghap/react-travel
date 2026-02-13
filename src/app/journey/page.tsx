@@ -1,9 +1,7 @@
 import Map from "@/components/Map";
-import Image from "next/image";
-import { Button } from "@/components/form/button";
-import { Input } from "@/components/form/input";
-import ImgTrain from "@/assets/images/img_train.svg";
 import Place from "@/components/Place";
+import Image from "next/image";
+import CityHero from "@/components/CityHero";
 
 import { Poppins, Inter } from "next/font/google";
 import { journeys } from "@/data/mockData";
@@ -35,23 +33,31 @@ export default function Home() {
 
   return (
     <div className="relative pr-150">
-      {/* header */}
       <div
         id="header"
-        className="fixed top-0 right-0 w-150 bottom-0 py-12 px-7 bg-gray-100 z-10 overflow-y-auto shadow-lg"
+        className="fixed top-0 right-0 w-150 bottom-0 pt-7 pb-12 px-7 bg-gray-100 z-10 overflow-y-auto shadow-lg"
       >
         <div className="relative z-10">
-          <h3 className="mb-8 text-4xl font-bold text-center">SHIZUOKA</h3>
+          <CityHero
+            city="Shizuoka"
+            country="Japan"
+            period="May 2025"
+            days={dayGroups.length}
+            places={journeys.length}
+          />
           <ul>
             {dayGroups.map((day) => (
-              <li key={day.date} className={day.dayNumber > 1 ? "mt-6" : ""}>
+              <li
+                key={day.date}
+                className={`bg-white p-5 rounded-xl shadow-sm ${day.dayNumber > 1 ? "mt-6" : ""}`}
+              >
                 <div className="space-y-2">
                   <div className="pb-2">
                     <div className="flex items-center justify-between pr-2">
                       <span className="text-sm tracking-widest text-neutral-500">
                         DAY {day.dayNumber}
                       </span>
-                      <span className="text-sm font-medium text-gray-700">
+                      <span className="text-xs font-medium text-gray-400">
                         {day.date}
                       </span>
                     </div>

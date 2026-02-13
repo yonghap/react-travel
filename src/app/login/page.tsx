@@ -24,7 +24,7 @@ export default function Home() {
           Journey
         </h1>
         <figure>
-          <img src={ImgTrain.src} className="mt-8 mx-auto w-20" alt="Train" />
+          <ImgTrain className="mt-8 mx-auto w-20" />
         </figure>
         <p className="text-[#0053D4] text-center mt-8">
           Wandering paths, fleeting skies,
