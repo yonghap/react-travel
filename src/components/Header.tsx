@@ -13,6 +13,9 @@ export default function Header() {
       <Link href="/journey" className="inline-block py-1 px-5">
         Journey
       </Link>
+      <Link href="/stats" className="inline-block py-1 px-5">
+        Stats
+      </Link>
     </header>
   );
 }
