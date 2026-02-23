@@ -9,6 +9,7 @@ import {
   ResponsiveContainer,
   CartesianGrid,
 } from "recharts";
+import Image from "next/image";
 
 const data = [
   { name: "일본", value: 12 },
@@ -20,21 +21,25 @@ const data = [
 
 const colors = ["#6366f1", "#f59e0b", "#10b981", "#ef4444", "#ec4899"];
 
-export default function CountryChart() {
+export default function CountryCard({ country, trips, cities, image }) {
   return (
-    <div className="bg-white rounded-2xl p-5 border border-neutral-200">
-      <h3 className=" mb-4 font-bold">방문 국가</h3>
-      <ResponsiveContainer width="100%" height={220}>
-        <BarChart data={data}>
-          <XAxis dataKey="name" />
-          <Tooltip />
-          <Bar dataKey="value">
-            {data.map((_, index) => (
-              <Cell key={index} fill={colors[index]} />
-            ))}
-          </Bar>
-        </BarChart>
-      </ResponsiveContainer>
+    <div className="group relative h-36 rounded-2xl overflow-hidden cursor-pointer">
+      <Image
+        src={image}
+        alt={country}
+        fill
+        className="object-cover transition duration-700 group-hover:scale-110"
+      />
+
+      {/* overlay */}
+      <div className="absolute inset-0 bg-black/35 group-hover:bg-black/20 transition" />
+      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+
+      <div className="absolute bottom-0 p-4 text-white">
+        <p className="text-xs opacity-80">{cities}</p>
+        <h3 className="text-xl font-semibold tracking-wide">{country}</h3>
+        <p className="text-sm opacity-90">{trips} trips</p>
+      </div>
     </div>
   );
 }

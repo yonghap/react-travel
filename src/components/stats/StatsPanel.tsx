@@ -2,7 +2,7 @@
 
 import StatsCard from "./StatsCard";
 import CategoryChart from "./CategoryChart";
-import CountryChart from "./CountryChart";
+import CountryCard from "./CountryChart";
 import { journeys } from "@/data/mockData";
 import Image from "next/image";
 
@@ -42,7 +42,7 @@ export default function StatsPanel() {
           />
           <div className="absolute inset-0 bg-black/45 transition-all duration-500 group-hover:bg-black/25" />
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-80" />
-          <div className="absolute inset-0 flex flex-col justify-end p-6 text-white transition-all duration-500 text-right group-hover:translate-y-[-4px]">
+          <div className="absolute inset-0 flex flex-col justify-end p-6 text-white transition-all duration-500 group-hover:translate-y-[-4px]">
             <p className="text-md tracking-[0.3em] opacity-80">
               제일 많이 방문한 국가
             </p>
@@ -63,7 +63,32 @@ export default function StatsPanel() {
         </div>
 
         {/* CHARTS */}
-        <CountryChart />
+        <div className="flex gap-2">
+          <div className="flex-1 w-[49%]">
+            <CountryCard
+              country="Japan"
+              cities="Tokyo • Osaka • Fukuoka"
+              trips={3}
+              image="/images/japan.jpg"
+            />
+          </div>
+          <div className="flex-1 w-[49%]">
+            <CountryCard
+              country="USA"
+              cities="New York"
+              trips={1}
+              image="/images/usa.jpg"
+            />
+          </div>
+          <div className="flex-1 w-[49%]">
+            <CountryCard
+              country="Thailand"
+              cities="Bangkok"
+              trips={1}
+              image="/images/thailand.jpg"
+            />
+          </div>
+        </div>
         <CategoryChart />
       </div>
     </div>
