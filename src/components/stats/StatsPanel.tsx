@@ -50,7 +50,7 @@ export default function StatsPanel() {
             <h2 className="text-4xl font-semibold tracking-wider mt-1">
               JAPAN
             </h2>
-            <p className="font-bold text-md opacity-80 mt-2">총 3회</p>
+            <p className="font-bold text-md opacity-80 mt-2">총 5회</p>
           </div>
         </div>
 
