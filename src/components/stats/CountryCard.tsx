@@ -38,7 +38,7 @@ export default function CountryCard({ country, trips, cities, image }) {
       <div className="absolute bottom-0 p-4 text-white">
         <p className="text-xs opacity-80">{cities}</p>
         <h3 className="text-xl font-semibold tracking-wide">{country}</h3>
-        <p className="text-sm opacity-90">{trips} trips</p>
+        <p className="text-sm opacity-90">{trips} Trips</p>
       </div>
     </div>
   );

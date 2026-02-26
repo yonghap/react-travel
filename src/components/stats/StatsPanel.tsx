@@ -2,7 +2,7 @@
 
 import StatsCard from "./StatsCard";
 import CategoryChart from "./CategoryChart";
-import CountryCard from "./CountryChart";
+import CountryCard from "./CountryCard";
 import { journeys } from "@/data/mockData";
 import Image from "next/image";
 
