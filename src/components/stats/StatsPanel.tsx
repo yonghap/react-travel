@@ -1,7 +1,6 @@
 "use client";
 
 import StatsCard from "./StatsCard";
-import CategoryChart from "./CategoryChart";
 import CountryCard from "./CountryCard";
 import { journeys } from "@/data/mockData";
 import Image from "next/image";
@@ -89,7 +88,6 @@ export default function StatsPanel() {
             />
           </div>
         </div>
-        <CategoryChart />
       </div>
     </div>
   );
