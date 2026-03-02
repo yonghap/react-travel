@@ -87,6 +87,27 @@ export default function StatsPanel() {
               image="/images/thailand.jpg"
             />
           </div>
+          <div className="flex-1 w-[49%]">
+            <CountryCard
+              country="Thailand"
+              cities="Bangkok"
+              trips={1}
+              image="/images/thailand.jpg"
+            />
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 gap-4">
+          <StatsCard label="가장 오래 머문 도시" value={uniqueCountries} />
+          <StatsCard label="재방문 국가" value={uniqueCities} />
+        </div>
+
+        <div className="grid grid-cols-5 gap-3">
+          <StatsCard label="2026" value={uniqueCountries} />
+          <StatsCard label="2025" value={uniqueCities} />
+          <StatsCard label="2024" value={uniqueCities} />
+          <StatsCard label="2023" value={uniqueCities} />
+          <StatsCard label="2022" value={uniqueCities} />
         </div>
       </div>
     </div>

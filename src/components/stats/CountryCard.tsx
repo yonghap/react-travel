@@ -23,7 +23,7 @@ const colors = ["#6366f1", "#f59e0b", "#10b981", "#ef4444", "#ec4899"];
 
 export default function CountryCard({ country, trips, cities, image }) {
   return (
-    <div className="group relative h-36 rounded-2xl overflow-hidden cursor-pointer">
+    <div className="group relative h-32 rounded-2xl overflow-hidden cursor-pointer">
       <Image
         src={image}
         alt={country}
