@@ -107,7 +107,7 @@ export default function StatsPanel() {
           <StatsCard label="2025" value={uniqueCities} />
           <StatsCard label="2024" value={uniqueCities} />
           <StatsCard label="2023" value={uniqueCities} />
-          <StatsCard label="2022" value={2} />
+          <StatsCard label="2022" value={4} />
         </div>
       </div>
     </div>
