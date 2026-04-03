@@ -60,7 +60,7 @@ export default function Home() {
             <CityHero
               city="Shizuoka"
               country="Japan"
-              period="May 2025"
+              period="May 2024"
               days={dayGroups.length}
               places={journeys.length}
             />         
