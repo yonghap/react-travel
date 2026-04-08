@@ -11,7 +11,7 @@ export default function Header() {
         id="logo"
         className={`py-14 text-3xl font-bold text-center text-[#0053D4] ${gasoek.className}`}
       >
-        The Travel Note
+        The Travel Notetest
       </h1>
       <figure></figure>
       <p className="text-[#0053D4] text-center mt-8">
