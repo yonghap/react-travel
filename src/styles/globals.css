@@ -1,8 +1,14 @@
 @import "tailwindcss";
+@font-face {
+  font-family: "ArialUnicodeCustom";
+  src: url("/fonts/arial.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
 @layer components {
   .font {
-    /* font-family: 'Fjalla One', sans-serif; */
-    font-family: "Gasoek One", sans-serif;
+    font-family:
+      "ArialUnicodeCustom", "Arial Unicode MS", Arial, sans-serif !important;
     letter-spacing: -0.5px;
   }
   .badge {
