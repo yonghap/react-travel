@@ -1,9 +1,9 @@
 export default function Home() {
   return (
     <div className="relative w-full p-6 max-w-[1800px] mx-auto">
-      <ul className="grid grid-cols-4 gap-3 items-stretch ">
+      <ul className="grid grid-cols-4 gap-4 items-stretch">
         {/* 2023 대한민국 */}
-        <li className="flex-1 min-w-0">
+        <li className="flex-1 min-w-0 rounded overflow-hidden">
           <div>
             <img src="https://lh3.googleusercontent.com/d/13xttX0P4nHolhBFlZK8jWKoGv34JuNKk" />
             <button
