@@ -12,7 +12,7 @@ export default function Home() {
             <button type="button" className="block p-3 pb-4 w-full text-center bg-[#f0efe6]">
               <div className="font-bold text-2xl">{item.name}</div>
               <div className="text-gray-500 text-xs mb-1">{item.year}</div>
-              <span className="bg-black text-white text-xs py-1 px-2">VIEW</span>
+              <span className="bg-black text-white text-xs py-1 px-3">VIEW</span>
             </button>
           </li>
         ))}
