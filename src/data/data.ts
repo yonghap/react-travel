@@ -78,5 +78,6 @@ export const place = [
     id: 1,
     name: '홍콩',
     year: '2017',
+    image: 'https://lh3.googleusercontent.com/d/1pLZmEhbBVf_EJH3SsOZeUgjqyodIhgo4',
   },
 ];
