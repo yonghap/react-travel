@@ -3,16 +3,19 @@ export const place = [
     id: 16,
     name: '시즈오카',
     year: '2026',
+    image: 'https://lh3.googleusercontent.com/d/1zhb06a_eAYYmN4h8s4If1O2wX3y2A5Sx',
   },
   {
     id: 15,
     name: '하코다테',
     year: '2025',
+    image: 'https://lh3.googleusercontent.com/d/1tnn9jApgTLfLS3w9wPaAwa4-wzYezgC-',
   },
   {
     id: 14,
     name: '나가사키&기타큐슈&사가',
     year: '2025',
+    image: 'https://lh3.googleusercontent.com/d/1i3ado0tqlBshyIjNPLETPzS7zc65cR6_',
   },
   {
     id: 13,
