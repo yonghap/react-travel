@@ -20,12 +20,12 @@ export const place = [
   {
     id: 13,
     name: '충칭',
-    year: '2025',
+    image: 'https://lh3.googleusercontent.com/d/1AS3OwnvfHy5WFvHWo_hM4roXlM8d7cK8',
   },
   {
     id: 12,
     name: '구마모토&가고시마&미야자키',
-    year: '2024',
+    image: 'https://lh3.googleusercontent.com/d/11rB_dY4Qge0xkLPkybo3qkr1ODcoPwCu',
   },
   {
     id: 11,
