@@ -6,7 +6,7 @@ export default function Home() {
       <ul className="inline-flex gap-2 h-full overflow-hidden">
         {place.map((item) => (
           <li key={item.id} className="w-[300px] flex-1 min-w-0 rounded overflow-hidden">
-            <figure className="h-[50%]">
+            <figure className="h-[60%]">
               {item.image ? (
                 <img src={item.image} alt={item.name} className="object-cover w-full h-full" />
               ) : (

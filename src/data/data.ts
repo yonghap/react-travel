@@ -15,7 +15,7 @@ export const place = [
     id: 14,
     name: '나가사키&기타큐슈&사가',
     year: '2025',
-    image: 'https://lh3.googleusercontent.com/d/1i3ado0tqlBshyIjNPLETPzS7zc65cR6_',
+    image: 'https://lh3.googleusercontent.com/d/1btbaaMNEKWPvB_3jvCXcYXDBdGFufaRB',
   },
   {
     id: 13,
@@ -25,12 +25,13 @@ export const place = [
   {
     id: 12,
     name: '구마모토&가고시마&미야자키',
-    image: 'https://lh3.googleusercontent.com/d/11rB_dY4Qge0xkLPkybo3qkr1ODcoPwCu',
+    image: 'https://lh3.googleusercontent.com/d/1JUK4Gh5XAtMojj31zojp3ASZKjcbNaQ4',
   },
   {
     id: 11,
     name: '히로시마&오노미치&오카야마',
     year: '2024',
+    image: 'https://lh3.googleusercontent.com/d/1gnGOLpB6J6XuoDR17OQLOjISlhLFXp4b',
   },
   {
     id: 10,
