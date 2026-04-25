@@ -43,6 +43,7 @@ export const place = [
     id: 9,
     name: '삿포로',
     year: '2024',
+    image: 'https://lh3.googleusercontent.com/d/1wquIjC51SFsMiVV3ZuyioRVXOS9eFVSZ',
   },
   {
     id: 8,
