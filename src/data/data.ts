@@ -49,6 +49,7 @@ export const place = [
     id: 8,
     name: '대만',
     year: '2023',
+    image: 'https://lh3.googleusercontent.com/d/1wquIjC51SFsMiVV3ZuyioRVXOS9eFVSZ',
   },
   {
     id: 7,
