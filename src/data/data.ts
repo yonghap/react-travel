@@ -55,6 +55,7 @@ export const place = [
     id: 7,
     name: '도쿄',
     year: '2022',
+    image: 'https://lh3.googleusercontent.com/d/1wquIjC51SFsMiVV3ZuyioRVXOS9eFVSZ',
   },
   {
     id: 6,
