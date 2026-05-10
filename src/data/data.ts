@@ -1,5 +1,11 @@
 export const place = [
   {
+    id: 17,
+    name: '고베&교토',
+    year: '2026',
+    image: 'https://lh3.googleusercontent.com/d/1zhb06a_eAYYmN4h8s4If1O2wX3y2A5Sx',
+  },
+  {
     id: 16,
     name: '시즈오카',
     year: '2026',
@@ -43,13 +49,13 @@ export const place = [
     id: 9,
     name: '삿포로',
     year: '2024',
-    image: 'https://lh3.googleusercontent.com/d/1wquIjC51SFsMiVV3ZuyioRVXOS9eFVSZ',
+    image: 'https://lh3.googleusercontent.com/d/1JAvb24qSAxyHiBB_IJHleOceYgobx17O',
   },
   {
     id: 8,
     name: '대만',
     year: '2023',
-    image: 'https://lh3.googleusercontent.com/d/1wquIjC51SFsMiVV3ZuyioRVXOS9eFVSZ',
+    image: 'https://lh3.googleusercontent.com/d/1kEBkjB6QkQwj81BHw3kCkSLOsBbQKG0j',
   },
   {
     id: 7,
