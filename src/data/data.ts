@@ -3,25 +3,25 @@ export const place = [
     id: 17,
     name: '고베&교토',
     year: '2026',
-    image: 'https://lh3.googleusercontent.com/d/1zhb06a_eAYYmN4h8s4If1O2wX3y2A5Sx',
+    image: 'https://lh3.googleusercontent.com/d/1rTEpgeGdpk56iHMJYSqIZiBO39RkqYiY',
   },
   {
     id: 16,
     name: '시즈오카',
     year: '2026',
-    image: 'https://lh3.googleusercontent.com/d/1zhb06a_eAYYmN4h8s4If1O2wX3y2A5Sx',
+    image: 'https://lh3.googleusercontent.com/d/1yi9CmQaQniTtdOE8X8PgCX92kSb0CplZ',
   },
   {
     id: 15,
     name: '하코다테',
     year: '2025',
-    image: 'https://lh3.googleusercontent.com/d/1tnn9jApgTLfLS3w9wPaAwa4-wzYezgC-',
+    image: 'https://lh3.googleusercontent.com/d/1tCgQZc4P3rRPb8ok3-PunHSKRf86sFAG',
   },
   {
     id: 14,
     name: '나가사키&기타큐슈&사가',
     year: '2025',
-    image: 'https://lh3.googleusercontent.com/d/1btbaaMNEKWPvB_3jvCXcYXDBdGFufaRB',
+    image: 'https://lh3.googleusercontent.com/d/1tqiTvEFkoTlAs6eOiHrVD38LI0grIv1g',
   },
   {
     id: 13,
@@ -31,13 +31,13 @@ export const place = [
   {
     id: 12,
     name: '구마모토&가고시마&미야자키',
-    image: 'https://lh3.googleusercontent.com/d/1JUK4Gh5XAtMojj31zojp3ASZKjcbNaQ4',
+    image: 'https://lh3.googleusercontent.com/d/1UrU4ElP6LhcVB3E4l3E5GyRcPaIcVFz5',
   },
   {
     id: 11,
     name: '히로시마&오노미치&오카야마',
     year: '2024',
-    image: 'https://lh3.googleusercontent.com/d/1gnGOLpB6J6XuoDR17OQLOjISlhLFXp4b',
+    image: 'https://lh3.googleusercontent.com/d/1PImchsq8wU5TVPmA7tHYk1G0xhwF-d8G',
   },
   {
     id: 10,

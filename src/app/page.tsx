@@ -5,8 +5,8 @@ export default function Home() {
     <div className="relative h-screen">
       <ul className="inline-flex gap-2 h-full overflow-hidden">
         {place.map((item) => (
-          <li key={item.id} className="w-[300px] flex-1 min-w-0 rounded overflow-hidden">
-            <figure className="h-[60%]">
+          <li key={item.id} className="w-[300px] flex-1 min-w-0 overflow-hidden">
+            <figure className="h-[70%]">
               {item.image ? (
                 <img src={item.image} alt={item.name} className="object-cover w-full h-full" />
               ) : (
