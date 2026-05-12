@@ -3,19 +3,19 @@ export const place = [
     id: 17,
     name: '고베&교토',
     year: '2026',
-    image: 'https://lh3.googleusercontent.com/d/1rTEpgeGdpk56iHMJYSqIZiBO39RkqYiY',
+    image: 'https://lh3.googleusercontent.com/d/1FRyTheeUDjRQ655K7xv4QaDXcMFBdkry',
   },
   {
     id: 16,
     name: '시즈오카',
     year: '2026',
-    image: 'https://lh3.googleusercontent.com/d/1yi9CmQaQniTtdOE8X8PgCX92kSb0CplZ',
+    image: 'https://lh3.googleusercontent.com/d/1rLSUTb7Um5rTkS2LOw0L6QUx94euNm8j',
   },
   {
     id: 15,
     name: '하코다테',
     year: '2025',
-    image: 'https://lh3.googleusercontent.com/d/1tCgQZc4P3rRPb8ok3-PunHSKRf86sFAG',
+    image: 'https://lh3.googleusercontent.com/d/1yPrT9vhHY_8PPmzy6MEKjCviCSkxOfEK',
   },
   {
     id: 14,
