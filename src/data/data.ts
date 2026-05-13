@@ -21,12 +21,12 @@ export const place = [
     id: 14,
     name: '나가사키&기타큐슈&사가',
     year: '2025',
-    image: 'https://lh3.googleusercontent.com/d/1tqiTvEFkoTlAs6eOiHrVD38LI0grIv1g',
+    image: 'https://lh3.googleusercontent.com/d/12J6JUyXFQuj4fQurdZvZZy-VdDVBhez5',
   },
   {
     id: 13,
     name: '충칭',
-    image: 'https://lh3.googleusercontent.com/d/1AS3OwnvfHy5WFvHWo_hM4roXlM8d7cK8',
+    image: 'https://lh3.googleusercontent.com/d/1WaPk7cHSXz5eSl1Fp3tOYItrzd-iOGiQ',
   },
   {
     id: 12,
