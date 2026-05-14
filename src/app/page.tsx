@@ -2,7 +2,7 @@ import { place } from '@/data/data';
 
 export default function Home() {
   return (
-    <div className="relative h-screen overflow-hidden">
+    <div className="relative h-screen overflow-y-hidden">
       <ul className="inline-flex gap-2 h-full">
         {place.map((item) => (
           <li key={item.id} className="w-[300px] flex-1 min-w-0 overflow-hidden relative">

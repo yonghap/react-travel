@@ -31,19 +31,19 @@ export const place = [
   {
     id: 12,
     name: '구마모토&가고시마&미야자키',
-    image: 'https://lh3.googleusercontent.com/d/1UrU4ElP6LhcVB3E4l3E5GyRcPaIcVFz5',
+    image: 'https://lh3.googleusercontent.com/d/1Fs1LwDnGoSUAh-8rTWPUH75qRVMOax2G',
   },
   {
     id: 11,
     name: '히로시마&오노미치&오카야마',
     year: '2024',
-    image: 'https://lh3.googleusercontent.com/d/1PImchsq8wU5TVPmA7tHYk1G0xhwF-d8G',
+    image: 'https://lh3.googleusercontent.com/d/1hQcU8CChOPSN2YTOdOHqHi0oJM8hVcod',
   },
   {
     id: 10,
     name: '싱가포르',
     year: '2024',
-    image: 'https://lh3.googleusercontent.com/d/1wquIjC51SFsMiVV3ZuyioRVXOS9eFVSZ',
+    image: 'https://lh3.googleusercontent.com/d/1n6bymASEbrIuLAuZ1P8y0cFsZpnwC77i',
   },
   {
     id: 9,
