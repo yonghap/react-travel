@@ -2,6 +2,7 @@ export const place = [
   {
     id: 17,
     name: '고베&교토',
+    city: 'osaka',
     year: '2026',
     image: 'https://lh3.googleusercontent.com/d/1FRyTheeUDjRQ655K7xv4QaDXcMFBdkry',
   },
