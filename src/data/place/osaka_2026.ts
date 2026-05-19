@@ -7,6 +7,7 @@ const osaka = {
       type: 'hero',
       title: 'OSAKA',
       image: '/images/4.jpg',
+      image2: '/images/4.jpg',
     },
   ],
 };
