@@ -1,3 +1,3 @@
-import osaka from './osaka_2026';
+import osaka from './260501_osaka';
 
 export const places = [osaka];

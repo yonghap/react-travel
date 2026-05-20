@@ -1,14 +1,14 @@
-@import "tailwindcss";
-@font-face {
-  font-family: "ArialUnicodeCustom";
-  src: url("/fonts/arial.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@200;400;600;700&display=swap');
+@import 'tailwindcss';
+@layer base {
+  body {
+    font-family: 'Gothic A1', sans-serif;
+    letter-spacing: -0.5px;
+  }
 }
 @layer components {
   .font {
-    font-family:
-      "ArialUnicodeCustom", "Arial Unicode MS", Arial, sans-serif !important;
+    font-family: 'Gothic A1', sans-serif;
     letter-spacing: -0.5px;
   }
   .badge {
