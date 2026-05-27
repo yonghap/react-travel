@@ -13,6 +13,7 @@ const osaka = {
       image1: '/images/4.jpg',
       image2: '/images/5.jpg',
       image3: '/images/6.jpg',
+      image4: '/images/6.jpg',
     },
     {
       type: 'hero',
